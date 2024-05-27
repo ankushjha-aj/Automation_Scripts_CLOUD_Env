@@ -3,35 +3,35 @@ from googleapiclient.errors import HttpError
 from google.cloud import compute_v1
 
 # Replace with your project ID
-PROJECT_ID = 'caramel-binder-418406'
+PROJECT_ID = '# your project ID'
 
 # Replace with your network target tag
-NETWORK_TARGET_TAG = 'ssh-allow-automation-script'
+NETWORK_TARGET_TAG = '# Your network target tag name'
 
 # Replace with your instance names
-INSTANCE_NAMES = ['gcp-tests']
+INSTANCE_NAMES = ['# Enter Your INSTANCE NAME']   
 
 # Create the Compute Engine client
 compute = build('compute', 'v1')
 
 # Create the firewall rule
 # Replace with your project ID
-PROJECT_ID = 'caramel-binder-418406'
+PROJECT_ID = '# Enter Your ProjectID' 
 
 # Replace with your network target tag
-NETWORK_TARGET_TAG = 'ssh-allow-automation-script'
+NETWORK_TARGET_TAG = '# You can Specify Your network target tag name here' 
 
 # Create the Compute Engine client
 compute = build('compute', 'v1')
 
 # Define the firewall rule
 firewall_rule = {
-    'name': 'allow-ssh-access-automation',
+    'name': '# You can define your firewall rule name here', 
     'network': f'projects/{PROJECT_ID}/global/networks/default',
     'targetTags': [NETWORK_TARGET_TAG],
     'allowed': [
         {
-            'IPProtocol': 'all'
+            'IPProtocol': 'all' # You can also change this with different protocols
         }
     ]
 }
@@ -71,9 +71,12 @@ def add_network_tags_to_instance(project_id, zone, instance_id, tags):
 
 
 # Example usage
-project_id = "caramel-binder-418406"
-zone = "us-west4-b"
-instance_id = "3044309407034756985"
-tags = ["ssh-allow-automation-script"]
+project_id = "#Your Project ID"
+zone = "# Your zone of your instance"
+instance_id = "# Enter your instance id"
+tags = ["# Enter your network tag name here"]
 
 add_network_tags_to_instance(project_id, zone, instance_id, tags)
+
+# Need CHANGES ON LINES
+# LINE 6, 9, 19, 12, 22, 74, 75, 76, 77 
