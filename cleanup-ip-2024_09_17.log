@@ -1,0 +1,6 @@
+2024-09-17 20:01 - CleanupUsage - INFO - main() - Filtered IP ranges: dict_keys(['103.151.186.162/32'])
+2024-09-17 20:01 - CleanupUsage - INFO - update_firewall_rule() - Current IP ranges in firewall rule: {'0.0.0.0/0', '192.140.153.60/32', '103.151.186.162/32', '103.151.186.161/32'}
+2024-09-17 20:01 - CleanupUsage - INFO - update_firewall_rule() - Removed IP ranges: 192.140.153.60/32, 0.0.0.0/0, 103.151.186.161/32
+2024-09-17 20:01 - CleanupUsage - INFO - update_firewall_rule() - Operation initiated: operation-1726583497548-622518c0be24f-06e610cb-7d52fc52
+2024-09-17 20:01 - CleanupUsage - INFO - update_firewall_rule() - Waiting for operation operation-1726583497548-622518c0be24f-06e610cb-7d52fc52 to complete...
+2024-09-17 20:01 - CleanupUsage - INFO - update_firewall_rule() - Firewall rule 'admin-allow-ssh' updated successfully.
